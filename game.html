@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Game</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>How Well Do You Know Mr. Mike and Mr. Woods?</h1>
+        <h2>Guess Who's Who!</h2>
+        <small>Click the button to play</small>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9">
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><button type="button" class="btn btn-primary" id="newFact">Pick a New Fact</button></h3>
+            </div>
+            <div class="card-body">
+                <div>
+                    <h4 id="question">(Question will show up here)</h4>
+                </div>
+
+                <div class="choice-button">
+                    <button type="button" class="btn btn-dark">Mr. Mike</button>
+                </div>
+                <div class="choice-button">
+                    <button type="button" class="btn btn-secondary">Mr. Woods</button>
+                </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <strong>Wrong Guesses: </strong> <span id="wrong-guesses"></span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <strong>Right Guesses: </strong> <span id="right-guesses"></span>
+          </div>
+        </div>
+
+<script src= "guessingGame.js"></script>
+</body>
+</html>
