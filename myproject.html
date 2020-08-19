@@ -5,7 +5,7 @@
 <title>My summer camp experience </title>
 </head> 
  
- 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
  <link rel="stylesheet" type="text/css" href="style.css">
 <body> 
@@ -43,6 +43,15 @@
             <div class= "col-1"></div>
         </div>
     </div>
+    <img src="flower.png" alt='flower!' height="100px" width="40px" id="flower">
+    <button id="grow" class="btn btn-primary">grow me!</button>
+    <script>
+        var grow = document.getElementById("grow")
+        grow.addEventListener("click", growFlower, false);
+        function growFlower(){
+            $("#flower").animate({height:"300px", width:"120px"});
+        }
+    </script>
 </body>
           
           
