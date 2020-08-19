@@ -1,16 +1,19 @@
 .container2{
     background-color: #ebe8e7;
     padding-top: 20px;
-    border-style: solid;
-    border-color: pink;
    
+    
+  
+
+}
+body{
+    background-color: lightblue;
 }
 .container4{
     background-color: #ebe8e7;
     padding-top: 20px;
     padding-bottom: auto;
-    border-style: solid;
-    border-color: pink;
+    
 }
 img{
     padding-bottom: 20px;
