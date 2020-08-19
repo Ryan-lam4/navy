@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .container2{
     background-color: #ebe8e7;
     padding-top: 20px;
@@ -15,9 +14,9 @@
 }
 img{
     padding-bottom: 20px;
-    border-radius: 5px;
-=======
-div.jumbotron {
+    border-radius: 5px;}
+
+    div.jumbotron {
     background-color: thistle;
 }
 
@@ -59,5 +58,4 @@ div.choice-button {
     padding: 5px;
     padding-bottom: 0px;
     display: inline-block;
->>>>>>> b7ffaf94f154dca22b18abd46ffc9eb05670c9d0
 }
