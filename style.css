@@ -1,4 +1,22 @@
-div.jumbotron {
+.container2{
+    background-color: #ebe8e7;
+    padding-top: 20px;
+    border-style: solid;
+    border-color: pink;
+   
+}
+.container4{
+    background-color: #ebe8e7;
+    padding-top: 20px;
+    padding-bottom: auto;
+    border-style: solid;
+    border-color: pink;
+}
+img{
+    padding-bottom: 20px;
+    border-radius: 5px;}
+
+    div.jumbotron {
     background-color: thistle;
 }
 
