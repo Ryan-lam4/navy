@@ -30,14 +30,32 @@ document.getElementById("newFact").addEventListener("click", function() {
         rnewquestion = false
     
         //Chooses either "mike" or "woods"
-        chosenPerson = pickPerson[Math.floor(Math.random() * pickPerson.length)]
+        if(mikeFacts.length > 0 && woodsFacts.length > 0) {
+            chosenPerson = pickPerson[Math.floor(Math.random() * pickPerson.length)]
+        }
+
+        //If there are still facts in mikeFacts Array, chosenPerson is Mr. Mike
+        else if(mikeFacts.length > 0) {
+            chosenPerson = "mike"
+        }
+
+        //If there are still facts in woodsFacts Array, chosenPerson is Mr. Woods
+        else if(woodsFacts.length > 0) {
+            chosenPerson = "woods"
+        }
+
+        //If no more facts are left, stops game
+        else {
+            alert("No more questions left, Game Over")
+            document.getElementById("newFact").removeEventListener("click"); 
+        }
 
         //If the chosen person is Mr. Mike
         if(chosenPerson == "mike") {
 
-            //Chooses random question in mikeFacts array
-            chosenQuestion = mikeFacts[Math.floor(Math.random() * mikeFacts.length)]
-            
+            //Chooses last question in mikeFacts Array
+            chosenQuestion = mikeFacts.pop();
+
             //Listens for "Mr. Mike" being clicked
             document.getElementById("mike").addEventListener("click", correct);
             
@@ -48,8 +66,8 @@ document.getElementById("newFact").addEventListener("click", function() {
         //If the chosen person is Mr. Woods
         else if(chosenPerson == "woods") {
 
-            //Chooses random question in woodsFacts array
-            chosenQuestion = woodsFacts[Math.floor(Math.random() * woodsFacts.length)]
+            //Chooses last question in woodsFacts Array
+            chosenQuestion = woodsFacts.pop();
             
             //Listens for "Mr. Woods" being clicked
             document.getElementById("woods").addEventListener("click", correct);
